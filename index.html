@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>T1X ERROR — Get Free Key</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    --cyan: #00D4FF;
+    --cyan-dim: #0088FF;
+    --magenta: #FF2D95;
+    --green: #00FF88;
+    --bg-deep: #030710;
+    --text: #FFFFFF;
+    --text-dim: #8896B0;
+    --text-soft: #B8C4D8;
+    --border-soft: #2A3A55;
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; margin: 0; padding: 0; }
+html, body {
+    min-height: 100vh;
+    font-family: 'Rajdhani', sans-serif;
+    background: #030710;
+    color: var(--text);
+    overflow-x: hidden;
+}
+body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background:
+        radial-gradient(circle at 20% 15%, rgba(0,212,255,0.14) 0%, transparent 45%),
+        radial-gradient(circle at 80% 85%, rgba(255,45,149,0.10) 0%, transparent 45%),
+        radial-gradient(circle at 50% 50%, rgba(0,136,255,0.06) 0%, transparent 60%);
+    z-index: -1;
+    animation: bgShift 12s ease-in-out infinite alternate;
+}
+@keyframes bgShift {
+    0%   { opacity: 0.7; transform: scale(1); }
+    100% { opacity: 1;   transform: scale(1.08); }
+}
+header {
+    padding: 16px 20px 14px;
+    text-align: center;
+    background: rgba(3,7,16,0.85);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(0,212,255,0.10);
+    position: sticky; top: 0; z-index: 100;
+}
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 1.05rem;
+    letter-spacing: 0.28em;
+    display: flex; align-items: center; justify-content: center;
+    gap: 12px; text-transform: uppercase;
+}
+.logo-icon { width: 22px; height: 22px; position: relative; flex-shrink: 0; }
+.logo-icon::before, .logo-icon::after {
+    content: '';
+    position: absolute;
+    border-radius: 2px;
+    background: var(--cyan);
+    box-shadow: 0 0 10px var(--cyan);
+}
+.logo-icon::before { width: 3px; height: 100%; left: 9px; top: 0; }
+.logo-icon::after {
+    width: 14px; height: 3px; left: 0; top: 0;
+    box-shadow: 0 0 10px var(--cyan), 0 19px 0 -1px var(--cyan);
+}
+.logo-text-fox { color: #fff; text-shadow: 0 0 14px rgba(255,255,255,0.25); }
+.logo-text-key {
+    color: var(--cyan);
+    text-shadow: 0 0 18px rgba(0,212,255,0.75), 0 0 30px rgba(0,212,255,0.35);
+}
+.logo-sub {
+    font-size: 0.6rem; font-weight: 600;
+    color: var(--text-dim);
+    letter-spacing: 0.42em; margin-top: 6px;
+    text-transform: uppercase;
+}
+.container {
+    padding: 24px 16px 40px;
+    max-width: 460px; margin: 0 auto;
+}
+.card {
+    position: relative;
+    background: linear-gradient(180deg, #0B1428 0%, #050A18 50%, #030710 100%);
+    border-radius: 26px;
+    padding: 26px 22px 22px;
+    border: 1px solid rgba(0,212,255,0.18);
+    box-shadow:
+        0 0 0 1px rgba(0,212,255,0.06),
+        0 20px 60px rgba(0,0,0,0.85),
+        0 0 80px -20px rgba(0,212,255,0.28),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute; top: 0; left: 12%; right: 12%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0,212,255,0.6), transparent);
+}
+.card::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: 50%;
+    transform: translateX(-50%);
+    width: 220px; height: 220px;
+    background: radial-gradient(circle, rgba(0,212,255,0.14) 0%, transparent 70%);
+    pointer-events: none; border-radius: 50%;
+}
+.hero { text-align: center; margin-bottom: 22px; }
+.hero-title {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900; font-size: 1.5rem;
+    letter-spacing: 0.05em; line-height: 1.15;
+}
+.hero-title .t-fox { color: #fff; text-shadow: 0 0 20px rgba(255,255,255,0.2); }
+.hero-title .t-key {
+    color: var(--cyan);
+    text-shadow: 0 0 20px rgba(0,212,255,0.85), 0 0 40px rgba(0,212,255,0.4);
+}
+.hero-sub {
+    font-size: 0.72rem; font-weight: 600;
+    color: var(--text-dim);
+    letter-spacing: 0.42em; text-transform: uppercase;
+    margin-top: 10px;
+}
+.hero-divider {
+    width: 90px; height: 3px;
+    margin: 16px auto 0;
+    background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+    border-radius: 3px;
+    box-shadow: 0 0 16px rgba(0,212,255,0.8);
+}
+.info-card {
+    background: rgba(8,14,30,0.75);
+    border: 1px solid var(--border-soft);
+    border-radius: 16px;
+    padding: 16px 18px;
+    margin-bottom: 18px;
+    position: relative; overflow: hidden;
+}
+.info-card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--cyan), transparent);
+    box-shadow: 0 0 12px var(--cyan);
+}
+.info-title {
+    font-size: 0.7rem; font-weight: 700;
+    color: var(--cyan);
+    letter-spacing: 0.2em; text-transform: uppercase;
+    margin-bottom: 8px;
+    display: flex; align-items: center; gap: 8px;
+}
+.info-title .info-bullet {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--cyan);
+    box-shadow: 0 0 8px var(--cyan);
+    animation: pulse-dot 1.8s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+    0%,100% { opacity: 1; transform: scale(1); }
+    50%     { opacity: 0.55; transform: scale(0.85); }
+}
+.info-body {
+    font-size: 0.82rem;
+    color: var(--text-soft);
+    line-height: 1.55; font-weight: 500;
+}
+.timer-wrap { text-align: center; margin: 22px 0 4px; position: relative; }
+.timer-ring {
+    width: 130px; height: 130px;
+    margin: 0 auto 12px;
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+}
+.timer-ring svg { position: absolute; inset: 0; transform: rotate(-90deg); }
+.timer-ring circle { fill: none; stroke-width: 4; stroke-linecap: round; }
+.timer-ring .track { stroke: rgba(0,212,255,0.12); }
+.timer-ring .progress {
+    stroke: var(--cyan);
+    stroke-dasharray: 345;
+    stroke-dashoffset: 0;
+    filter: drop-shadow(0 0 8px var(--cyan));
+    transition: stroke-dashoffset 1s linear;
+}
+.timer-ring.done .progress { stroke: var(--green); filter: drop-shadow(0 0 10px var(--green)); }
+.timer-num {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900; font-size: 2.4rem;
+    color: var(--cyan);
+    text-shadow: 0 0 24px rgba(0,212,255,0.85);
+    line-height: 1; z-index: 2; position: relative;
+}
+.timer-ring.done .timer-num { color: var(--green); text-shadow: 0 0 24px rgba(0,255,136,0.85); }
+.timer-label {
+    font-size: 0.65rem; color: var(--text-dim);
+    letter-spacing: 0.42em; text-transform: uppercase; font-weight: 700;
+}
+.btn {
+    width: 100%; padding: 16px;
+    border: none; border-radius: 28px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.9rem; font-weight: 700;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    transition: transform 0.15s, box-shadow 0.2s;
+    -webkit-tap-highlight-color: transparent;
+}
+.btn:active { transform: scale(0.97); }
+.btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.btn-primary {
+    background: linear-gradient(90deg, #00D4FF 0%, #0088FF 50%, #0055EE 100%);
+    color: #fff;
+    box-shadow:
+        0 0 24px rgba(0,212,255,0.55),
+        0 8px 24px rgba(0,85,238,0.35),
+        inset 0 1px 0 rgba(255,255,255,0.25);
+    position: relative; overflow: hidden;
+}
+.btn-primary::after {
+    content: '';
+    position: absolute; top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+    animation: shimmer 3.2s ease-in-out infinite;
+}
+@keyframes shimmer {
+    0%   { left: -100%; }
+    60%  { left: 100%; }
+    100% { left: 100%; }
+}
+.btn-icon { width: 18px; height: 18px; position: relative; flex-shrink: 0; }
+.icon-lock::before {
+    content: '';
+    position: absolute;
+    width: 11px; height: 8px;
+    border: 2px solid currentColor;
+    border-top: none;
+    border-radius: 0 0 2px 2px;
+    left: 3.5px; bottom: 0;
+}
+.icon-lock::after {
+    content: '';
+    position: absolute;
+    width: 9px; height: 8px;
+    border: 2px solid currentColor;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    left: 4.5px; top: 0;
+}
+.icon-copy::before {
+    content: '';
+    position: absolute;
+    width: 11px; height: 13px;
+    border: 2px solid currentColor;
+    border-radius: 2px;
+    right: 0; bottom: 0;
+}
+.icon-copy::after {
+    content: '';
+    position: absolute;
+    width: 11px; height: 13px;
+    border: 2px solid currentColor;
+    border-radius: 2px;
+    left: 0; top: 0;
+    background: var(--bg-deep);
+}
+.icon-retry::before {
+    content: '';
+    position: absolute; inset: 0;
+    border: 2.5px solid currentColor;
+    border-radius: 50%;
+    border-right-color: transparent;
+}
+.icon-spin { animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.btn-dark {
+    background: rgba(8,14,30,0.9);
+    color: var(--cyan);
+    border: 1px solid rgba(0,212,255,0.35);
+}
+#result { margin-top: 6px; }
+.result-card {
+    background: linear-gradient(180deg, rgba(0,212,255,0.06) 0%, rgba(0,85,238,0.03) 100%);
+    border: 1px solid rgba(0,212,255,0.5);
+    border-radius: 18px;
+    padding: 22px 18px;
+    text-align: center; position: relative;
+    box-shadow: 0 0 40px rgba(0,212,255,0.25), inset 0 1px 0 rgba(255,255,255,0.06);
+}
+.result-card::before {
+    content: '';
+    position: absolute; top: -1px; left: 20%; right: 20%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+    box-shadow: 0 0 12px var(--cyan);
+}
+.result-label {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700; font-size: 0.72rem;
+    color: var(--cyan);
+    letter-spacing: 0.32em; text-transform: uppercase;
+    margin-bottom: 14px;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+}
+.result-label .check-circle {
+    width: 18px; height: 18px;
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 0 12px rgba(0,255,136,0.6);
+    position: relative;
+}
+.result-label .check-circle::after {
+    content: '';
+    width: 4px; height: 8px;
+    border-right: 2px solid var(--green);
+    border-bottom: 2px solid var(--green);
+    transform: rotate(45deg);
+    margin-top: -2px;
+}
+.keybox {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700; font-size: 1.1rem;
+    letter-spacing: 0.14em; color: #fff;
+    padding: 14px 10px;
+    background: rgba(3,7,16,0.85);
+    border: 1px solid rgba(0,212,255,0.3);
+    border-radius: 12px;
+    word-break: break-all;
+    user-select: all; -webkit-user-select: all;
+    text-shadow: 0 0 18px rgba(0,212,255,0.55);
+    cursor: pointer; transition: 0.15s;
+}
+.keybox:active { transform: scale(0.98); background: rgba(0,212,255,0.08); }
+.key-info {
+    display: flex; justify-content: center; gap: 16px;
+    margin-top: 16px; flex-wrap: wrap;
+}
+.key-info-item {
+    font-size: 0.68rem; color: var(--text-dim);
+    font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase;
+    display: flex; align-items: center; gap: 6px;
+}
+.key-info-item .dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: var(--cyan);
+    box-shadow: 0 0 6px var(--cyan);
+}
+#status {
+    font-size: 0.78rem; text-align: center;
+    margin-top: 16px;
+    color: var(--text-dim);
+    min-height: 20px; font-weight: 600;
+    letter-spacing: 0.05em; transition: color 0.2s;
+}
+#status.success { color: var(--green); }
+#status.error   { color: #FF4D6D; }
+#loader {
+    display: none; position: fixed; inset: 0;
+    background: rgba(3,7,16,0.92);
+    backdrop-filter: blur(8px);
+    z-index: 3000;
+    justify-content: center; align-items: center;
+    flex-direction: column; gap: 22px;
+}
+.loader-ring { width: 70px; height: 70px; position: relative; }
+.loader-ring::before {
+    content: '';
+    position: absolute; inset: 0;
+    border: 3px solid rgba(0,212,255,0.15);
+    border-top-color: var(--cyan);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    box-shadow: 0 0 20px rgba(0,212,255,0.5);
+}
+.loader-ring::after {
+    content: '';
+    position: absolute; inset: 12px;
+    border: 2px solid rgba(255,45,149,0.15);
+    border-bottom-color: var(--magenta);
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite reverse;
+    box-shadow: 0 0 16px rgba(255,45,149,0.4);
+}
+#loader p {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.72rem; letter-spacing: 0.42em;
+    color: var(--cyan); text-transform: uppercase;
+    text-shadow: 0 0 12px rgba(0,212,255,0.6);
+}
+.footer {
+    display: flex; align-items: center; justify-content: center;
+    gap: 12px; margin-top: 26px;
+    font-size: 0.62rem; color: var(--text-dim);
+    letter-spacing: 0.28em; text-transform: uppercase; font-weight: 700;
+}
+.footer-line {
+    flex: 1; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-soft), transparent);
+    max-width: 60px;
+}
+.footer-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 10px var(--green);
+    animation: pulse-dot 2s ease-in-out infinite;
+}
+#toast {
+    position: fixed; bottom: 28px; left: 50%;
+    transform: translateX(-50%) translateY(30px);
+    background: rgba(3,7,16,0.95);
+    border: 1px solid var(--cyan);
+    border-radius: 12px;
+    padding: 12px 22px;
+    color: #fff; font-size: 0.8rem; font-weight: 600;
+    letter-spacing: 0.06em; opacity: 0;
+    transition: 0.3s ease; z-index: 4000;
+    pointer-events: none;
+    box-shadow: 0 0 30px rgba(0,212,255,0.5), 0 10px 30px rgba(0,0,0,0.6);
+    max-width: 85vw; text-align: center;
+    backdrop-filter: blur(10px);
+}
+#toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+.hidden { display: none !important; }
+</style>
+</head>
+<body>
+
+<div id="loader">
+    <div class="loader-ring"></div>
+    <p>GENERATING</p>
+</div>
+
+<header>
+    <div class="logo">
+        <span class="logo-icon"></span>
+        <span><span class="logo-text-fox">T1X </span> <span class="logo-text-key">ERROR</span></span>
+    </div>
+    <div class="logo-sub">Secure License System</div>
+</header>
+
+<div class="container">
+    <div class="card">
+        <div class="hero">
+            <div class="hero-title">
+                <span class="t-fox">FREE KEY</span><br>
+                <span class="t-key">DARK TEAM</span>
+            </div>
+            <div class="hero-sub">Valid 24 Hours</div>
+            <div class="hero-divider"></div>
+        </div>
+
+        <div class="info-card" id="infoCard">
+            <div class="info-title">
+                <span class="info-bullet"></span>
+                Generating Your Key
+            </div>
+            <div class="info-body">
+                Please wait <strong>3 seconds</strong> while we generate a fresh license key for you.
+                Do not close this page.
+            </div>
+        </div>
+
+        <div class="timer-wrap">
+            <div class="timer-ring" id="timerRing">
+                <svg viewBox="0 0 120 120">
+                    <circle class="track"    cx="60" cy="60" r="55"></circle>
+                    <circle class="progress" cx="60" cy="60" r="55" id="progressCircle"></circle>
+                </svg>
+                <div class="timer-num" id="timer">3</div>
+            </div>
+            <div class="timer-label">Seconds</div>
+        </div>
+
+        <button class="btn btn-primary" id="unlockBtn" disabled style="margin-top:22px;">
+            <span class="btn-icon icon-lock"></span>
+            Unlock Key
+        </button>
+
+        <div id="result" class="hidden">
+            <div class="result-card">
+                <div class="result-label">
+                    <span class="check-circle"></span>
+                    Your Key
+                </div>
+                <div class="keybox" id="keyDisplay" title="Tap to copy">—</div>
+                <div class="key-info">
+                    <div class="key-info-item"><span class="dot"></span>24 Hours</div>
+                    <div class="key-info-item"><span class="dot"></span>1 Device</div>
+                    <div class="key-info-item"><span class="dot"></span>Tap to Copy</div>
+                </div>
+            </div>
+            <button class="btn btn-dark" id="copyBtn" style="margin-top:12px;">
+                <span class="btn-icon icon-copy"></span>
+                Copy Key
+            </button>
+        </div>
+
+        <div id="status"></div>
+
+        <div class="footer">
+            <span class="footer-line"></span>
+            <span class="footer-dot"></span>
+            <span>Secure Connection</span>
+            <span class="footer-line"></span>
+        </div>
+    </div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+/* =========================================================
+ *  ⚙️  GITLAB CONFIG
+ * ========================================================= */
+const GITLAB_CONFIG = {
+    TOKEN:        "glpat-h32tvL0nWd4R3EoR7BcJxWM6MQpvOjEKdTpxMGYyaQ8.01.170qerggd",
+    PROJECT_PATH: "nahidhasan528963/t1x-error",
+    BRANCH:       "main",
+    FILE:         "config.json"
+};
+
+const WAIT_SECONDS     = 3;
+const KEY_VALIDITY_MS  = 24 * 60 * 60 * 1000;
+const FREE_USERNAME    = "Free User";
+const FREE_TYPE        = "free";
+
+let _toastTimer = null;
+
+/* =========================================================
+ *  URLS
+ * ========================================================= */
+function gitlabFileUrl() {
+    const pid  = encodeURIComponent(GITLAB_CONFIG.PROJECT_PATH);
+    const file = encodeURIComponent(GITLAB_CONFIG.FILE);
+    return `https://gitlab.com/api/v4/projects/${pid}/repository/files/${file}/raw?ref=${GITLAB_CONFIG.BRANCH}&private_token=${GITLAB_CONFIG.TOKEN}`;
+}
+function gitlabUploadUrl() {
+    const pid  = encodeURIComponent(GITLAB_CONFIG.PROJECT_PATH);
+    const file = encodeURIComponent(GITLAB_CONFIG.FILE);
+    return `https://gitlab.com/api/v4/projects/${pid}/repository/files/${file}?private_token=${GITLAB_CONFIG.TOKEN}`;
+}
+
+/* =========================================================
+ *  PULL / PUSH
+ * ========================================================= */
+async function pullConfig() {
+    const res = await fetch(gitlabFileUrl() + '&_t=' + Date.now(), { cache: 'no-store' });
+    if (res.status === 404) {
+        return { enabled: true, get_key_url: "", telegram_url: "",
+                 banned_devices: [], keys: {} };
+    }
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    return await res.json();
+}
+
+async function pushConfig(payload) {
+    const body = {
+        branch: GITLAB_CONFIG.BRANCH,
+        content: JSON.stringify(payload, null, 4),
+        commit_message: 'Add free key via T1X ERROR IS BACK GetKey page'
+    };
+    const url = gitlabUploadUrl();
+    let res = await fetch(url, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+    });
+    if (!res.ok && (res.status === 404 || res.status === 400)) {
+        res = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body)
+        });
+    }
+    if (!res.ok) {
+        const t = await res.text();
+        throw new Error(res.status + ' — ' + t.substring(0, 150));
+    }
+    return true;
+}
+
+/* =========================================================
+ *  KEY GENERATOR
+ * ========================================================= */
+function generateKey() {
+    const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+    const seg = n => Array.from({ length: n },
+        () => chars[Math.floor(Math.random() * chars.length)]).join('');
+    return `ERROR-${seg(4)}-${seg(4)}`;
+}
+
+/* =========================================================
+ *  CLEANUP STALE UNUSED FREE KEYS
+ *  (removes unbound free keys older than their validity)
+ * ========================================================= */
+function cleanupStaleKeys(config) {
+    if (!config.keys) return;
+    const now = Date.now();
+    const toRemove = [];
+
+    Object.keys(config.keys).forEach(k => {
+        const e = config.keys[k] || {};
+        const type = e.type || "free";
+        const bound = e.device_id || "";
+        const created = e.created_at || 0;
+
+        // Free key + unbound + expired window → dead weight
+        if (type === "free" && !bound && (now - created) > KEY_VALIDITY_MS) {
+            toRemove.push(k);
+        }
+        // Any key absolutely expired AND unbound → cleanup
+        if (!bound && (e.expires_at || 0) < now) {
+            if (!toRemove.includes(k)) toRemove.push(k);
+        }
+    });
+
+    toRemove.forEach(k => delete config.keys[k]);
+    return toRemove.length;
+}
+
+/* =========================================================
+ *  CREATE KEY
+ * ========================================================= */
+async function createKey() {
+    showLoader(true);
+    setStatus('Fetching config...', '');
+
+    try {
+        const config = await pullConfig();
+        config.keys = config.keys || {};
+        config.banned_devices = config.banned_devices || [];
+
+        // Cleanup before adding new
+        const cleaned = cleanupStaleKeys(config);
+        if (cleaned > 0) {
+            console.log('Cleaned ' + cleaned + ' stale keys');
+        }
+
+        let key = '';
+        do { key = generateKey(); } while (config.keys[key]);
+
+        const now = Date.now();
+        config.keys[key] = {
+            device_id:  '',              // bound on first app login
+            username:   FREE_USERNAME,   // fixed for free keys
+            type:       FREE_TYPE,       // marker for cleanup logic
+            created_at: now,
+            expires_at: now + KEY_VALIDITY_MS
+        };
+
+        setStatus('Saving to server...', '');
+        await pushConfig(config);
+
+        showLoader(false);
+        displayKey(key);
+
+    } catch (err) {
+        console.error(err);
+        showLoader(false);
+        setStatus('ERROR · ' + err.message, 'error');
+        unlockBtnReset();
+    }
+}
+
+function displayKey(key) {
+    document.getElementById('keyDisplay').textContent = key;
+    document.getElementById('result').classList.remove('hidden');
+    document.getElementById('infoCard').classList.add('hidden');
+    document.getElementById('unlockBtn').classList.add('hidden');
+    document.querySelector('.timer-wrap').classList.add('hidden');
+    setStatus('Key generated — auto-copied', 'success');
+    toast('Key copied to clipboard');
+    copyToClipboard(key);
+}
+
+/* =========================================================
+ *  UI TIMER
+ * ========================================================= */
+const CIRC = 2 * Math.PI * 55;
+document.getElementById('progressCircle').style.strokeDasharray = CIRC;
+
+let seconds = WAIT_SECONDS;
+const timerEl   = document.getElementById('timer');
+const ringEl    = document.getElementById('timerRing');
+const progressEl= document.getElementById('progressCircle');
+const unlockBtn = document.getElementById('unlockBtn');
+const statusEl  = document.getElementById('status');
+
+progressEl.style.strokeDashoffset = 0;
+
+const iv = setInterval(() => {
+    seconds--;
+    timerEl.textContent = seconds;
+    const offset = CIRC * (1 - seconds / WAIT_SECONDS);
+    progressEl.style.strokeDashoffset = offset;
+    if (seconds <= 0) {
+        clearInterval(iv);
+        timerEl.textContent = '✓';
+        ringEl.classList.add('done');
+        unlockBtn.disabled = false;
+        setStatus('Ready — tap Unlock', '');
+    }
+}, 1000);
+
+function setStatus(msg, cls) {
+    statusEl.textContent = msg;
+    statusEl.className = cls || '';
+}
+function unlockBtnReset() {
+    unlockBtn.disabled = false;
+    unlockBtn.innerHTML = '<span class="btn-icon icon-retry"></span>Retry';
+}
+
+/* =========================================================
+ *  EVENTS
+ * ========================================================= */
+unlockBtn.addEventListener('click', () => {
+    unlockBtn.disabled = true;
+    unlockBtn.innerHTML = '<span class="btn-icon icon-spin icon-retry"></span>Working...';
+    createKey();
+});
+document.getElementById('copyBtn').addEventListener('click', () => {
+    const key = document.getElementById('keyDisplay').textContent;
+    copyToClipboard(key);
+    toast('Key copied');
+});
+document.getElementById('keyDisplay').addEventListener('click', () => {
+    const key = document.getElementById('keyDisplay').textContent;
+    if (key && key !== '—') {
+        copyToClipboard(key);
+        toast('Key copied');
+    }
+});
+
+/* =========================================================
+ *  HELPERS
+ * ========================================================= */
+async function copyToClipboard(text) {
+    try {
+        await navigator.clipboard.writeText(text);
+        return true;
+    } catch (e) {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.focus(); ta.select();
+        try { document.execCommand('copy'); } catch (x) {}
+        document.body.removeChild(ta);
+        return true;
+    }
+}
+function showLoader(s) {
+    document.getElementById('loader').style.display = s ? 'flex' : 'none';
+}
+function toast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(_toastTimer);
+    _toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
+}
+</script>
+</body>
+</html>
